@@ -1,0 +1,81 @@
+#HEAD
+push
+move
+250 200 0
+sphere
+0 0 0 100
+push
+#NOSE
+move
+0 -25 0
+torus
+0 0 0 15 10
+#WHISKERS
+push
+rotate
+z 15
+box
+0 0 0 150 5 5
+box
+0 0 0 -150 5 5
+pop
+box
+0 0 0 150 5 5
+box
+0 0 0 -150 5 5
+push
+rotate
+z -15
+box
+0 0 0 150 5 5
+box
+0 0 0 -150 5 -5
+pop
+#MOUTH
+box
+-1 0 0 2 30 5
+push
+move
+0 -30 0
+push
+rotate
+z -45
+box
+0 0 0 2 20 5
+pop
+rotate
+z 45
+box
+0 0 0 2 20 5
+pop
+pop
+#EARS
+push
+move
+0 100 0
+push
+move
+70 0 0
+rotate
+z 70
+torus
+30 10 0 30 30
+pop
+push
+move
+-70 0 0
+rotate
+z -70
+torus
+-30 10 0 30 30
+pop
+pop
+push
+move
+0 30 0
+sphere
+-40 0 0 20
+sphere
+40 0 0 20
+save
+img.png
