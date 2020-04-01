@@ -70,6 +70,7 @@ torus
 -30 10 0 30 30
 pop
 pop
+#EYES
 push
 move
 0 30 0
